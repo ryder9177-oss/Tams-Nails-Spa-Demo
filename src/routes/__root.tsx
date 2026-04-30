@@ -31,14 +31,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Tam's Nail Spa — Elevated Nail Atelier" },
+      { title: "Tam's Nail Spa in Sierra Vista, AZ" },
       { name: "description", content: "A private nail spa in Sierra Vista offering precision nail services and professional waxing in a calm, refined space." },
       { name: "author", content: "Tam's Nail Spa" },
-      { property: "og:title", content: "Tam's Nail Spa — Elevated Nail Atelier" },
-      { property: "og:description", content: "Precision nail care in a calm, refined space." },
+      { property: "og:title", content: "Tam's Nail Spa in Sierra Vista, AZ" },
+      { property: "og:description", content: "A private nail spa in Sierra Vista offering precision nail services and professional waxing in a calm, refined space." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Tam's Nail Spa in Sierra Vista, AZ" },
+      { name: "twitter:description", content: "A private nail spa in Sierra Vista offering precision nail services and professional waxing in a calm, refined space." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/87b0b90c-ad18-4b2a-9020-38674291624c/id-preview-5fd5254f--2a661acc-86d9-475f-96fb-c04adb28b3db.lovable.app-1777514671834.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/87b0b90c-ad18-4b2a-9020-38674291624c/id-preview-5fd5254f--2a661acc-86d9-475f-96fb-c04adb28b3db.lovable.app-1777514671834.png" },
     ],
     links: [
       {
