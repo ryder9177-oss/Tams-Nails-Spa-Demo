@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
 import atelier from "@/assets/atelier.jpg";
-import p1 from "@/assets/portfolio-1.jpg";
-import p2 from "@/assets/portfolio-2.jpg";
-import p3 from "@/assets/portfolio-3.jpg";
+import p1 from "@/assets/upload-1.png";
+import p2 from "@/assets/upload-3.png";
+import p3 from "@/assets/upload-5.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
