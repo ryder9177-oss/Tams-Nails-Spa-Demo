@@ -3,9 +3,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Maison Onyx Nail Atelier" },
-      { name: "description", content: "Curated nail services: dipping powder, gel artistry, collagen spa pedicures and professional waxing in Sierra Vista." },
-      { property: "og:title", content: "Services — Maison Onyx" },
+      { title: "Services — Tam's Nail Spa" },
+      { name: "description", content: "Curated nail services and professional waxing in Sierra Vista." },
+      { property: "og:title", content: "Services — Tam's Nail Spa" },
       { property: "og:description", content: "A specialised hand for every detail." },
     ],
   }),
@@ -14,36 +14,18 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    tag: "Dip Into Perfection",
-    name: "Dipping Powder",
-    note: "Lightweight, durable colour with a flawless finish. Long-wearing without compromise to the natural nail.",
+    tag: "Precision & Polish",
+    name: "Nail Services",
+    note: "From classic manicures to dipping powder and gel artistry — long-wearing, refined, and quietly considered.",
     items: [
-      ["Classic Dip", "$45"],
-      ["Dip with Tips", "$55"],
-      ["Ombré Dip", "$60"],
-      ["Removal & Refresh", "$15"],
-    ],
-  },
-  {
-    tag: "Structured Elegance",
-    name: "Acrylic & Gel Artistry",
-    note: "Custom design precision in every detail. Built for shape, longevity and a quietly considered finish.",
-    items: [
+      ["Classic Manicure", "$25"],
       ["Gel Manicure", "$40"],
+      ["Classic Dip", "$45"],
       ["Full Set Acrylic", "$55"],
       ["Acrylic Fill", "$40"],
+      ["Ombré Dip", "$60"],
       ["Custom Art (per nail)", "+$5"],
-    ],
-  },
-  {
-    tag: "Restorative Calm",
-    name: "Collagen Spa Pedicures",
-    note: "Restorative care with a focus on relaxation and renewal. Hydration, exfoliation and considered finish.",
-    items: [
-      ["Signature Pedicure", "$45"],
-      ["Collagen Treatment", "$60"],
-      ["Hot Stone Ritual", "$70"],
-      ["Express Polish Change", "$20"],
+      ["Removal & Refresh", "$15"],
     ],
   },
   {

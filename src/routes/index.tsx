@@ -8,9 +8,9 @@ import p3 from "@/assets/portfolio-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Maison Onyx — Elevated Nail Atelier in Sierra Vista" },
-      { name: "description", content: "A private nail atelier offering precision dipping, gel artistry, collagen pedicures and waxing in a calm, refined Sierra Vista space." },
-      { property: "og:title", content: "Maison Onyx — Elevated Nail Atelier" },
+      { title: "Tam's Nail Spa — Elevated Nail Atelier in Sierra Vista" },
+      { name: "description", content: "A private nail spa offering precision nail services and professional waxing in a calm, refined Sierra Vista space." },
+      { property: "og:title", content: "Tam's Nail Spa — Elevated Nail Atelier" },
       { property: "og:description", content: "Precision nail care in a calm, refined space." },
       { property: "og:image", content: hero },
     ],
@@ -79,9 +79,9 @@ function Index() {
         </div>
         <div className="grid md:grid-cols-3 gap-px bg-border">
           {[
-            { name: "Dipping Powder", tag: "Dip Into Perfection", note: "Lightweight, durable colour with a flawless finish." },
-            { name: "Gel Artistry", tag: "Structured Elegance", note: "Custom design precision in every detail." },
-            { name: "Collagen Pedicures", tag: "Restorative Calm", note: "A focus on relaxation and renewal." },
+            { name: "Nail Services", tag: "Precision & Polish", note: "Manicures, dipping powder, gel and acrylic artistry — long-wearing and refined." },
+            { name: "Waxing", tag: "Refined Smoothness", note: "Clean, precise, and comfortable results, performed with complete discretion." },
+            { name: "By Appointment", tag: "Quietly Considered", note: "Reservation-only seating so every client is honoured with full attention." },
           ].map((s) => (
             <div key={s.name} className="bg-background p-10 lg:p-12 hover-lift">
               <p className="text-[11px] uppercase tracking-luxe text-gold mb-6">{s.tag}</p>

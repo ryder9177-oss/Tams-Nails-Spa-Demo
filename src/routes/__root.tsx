@@ -29,10 +29,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maison Onyx — Elevated Nail Atelier" },
-      { name: "description", content: "A private nail atelier in Sierra Vista offering precision dipping, gel artistry, collagen pedicures and waxing in a calm, refined space." },
-      { name: "author", content: "Maison Onyx" },
-      { property: "og:title", content: "Maison Onyx — Elevated Nail Atelier" },
+      { title: "Tam's Nail Spa — Elevated Nail Atelier" },
+      { name: "description", content: "A private nail spa in Sierra Vista offering precision nail services and professional waxing in a calm, refined space." },
+      { name: "author", content: "Tam's Nail Spa" },
+      { property: "og:title", content: "Tam's Nail Spa — Elevated Nail Atelier" },
       { property: "og:description", content: "Precision nail care in a calm, refined space." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -88,7 +88,7 @@ function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/75 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 h-20 flex items-center justify-between">
         <Link to="/" className="font-serif text-2xl tracking-tight text-foreground">
-          Maison <span className="text-gold">Onyx</span>
+          Tam's <span className="text-gold">Nail Spa</span>
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           <Link to="/" className={linkBase} activeOptions={{ exact: true }} activeProps={{ className: "text-foreground" }}>Home</Link>
@@ -112,7 +112,7 @@ function SiteFooter() {
     <footer className="border-t border-border/60 bg-cream">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="font-serif text-2xl">Maison <span className="text-gold">Onyx</span></div>
+          <div className="font-serif text-2xl">Tam's <span className="text-gold">Nail Spa</span></div>
           <p className="mt-4 text-sm text-taupe max-w-sm leading-relaxed">
             A private atelier for nails — where precision meets calm, and beauty is crafted, not rushed.
           </p>
@@ -128,7 +128,7 @@ function SiteFooter() {
       </div>
       <div className="border-t border-border/60">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 py-6 text-[11px] uppercase tracking-luxe text-taupe flex flex-col sm:flex-row justify-between gap-2">
-          <span>© {new Date().getFullYear()} Maison Onyx</span>
+          <span>© {new Date().getFullYear()} Tam's Nail Spa</span>
           <span>Crafted with intention</span>
         </div>
       </div>

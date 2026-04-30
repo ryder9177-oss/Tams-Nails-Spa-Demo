@@ -4,9 +4,9 @@ import { useState } from "react";
 export const Route = createFileRoute("/booking")({
   head: () => ({
     meta: [
-      { title: "Book Appointment — Maison Onyx" },
-      { name: "description", content: "Reserve your appointment at Maison Onyx in Sierra Vista. Choose a service, select a time, payment in person." },
-      { property: "og:title", content: "Book Appointment — Maison Onyx" },
+      { title: "Book Appointment — Tam's Nail Spa" },
+      { name: "description", content: "Reserve your appointment at Tam's Nail Spa in Sierra Vista. Choose a service, select a time, payment in person." },
+      { property: "og:title", content: "Book Appointment — Tam's Nail Spa" },
       { property: "og:description", content: "Reserve your time. Pay in person." },
     ],
   }),
@@ -14,10 +14,8 @@ export const Route = createFileRoute("/booking")({
 });
 
 const categories = [
-  "Dipping Powder",
-  "Acrylic & Gel Artistry",
-  "Collagen Spa Pedicures",
-  "Professional Waxing",
+  "Nail Services",
+  "Waxing",
 ];
 
 function nextDays(n = 7) {
