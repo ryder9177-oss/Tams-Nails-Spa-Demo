@@ -125,14 +125,18 @@ function SiteFooter() {
           <p className="mt-4 text-sm text-taupe max-w-sm leading-relaxed">
             A private atelier for nails — where precision meets calm, and beauty is crafted, not rushed.
           </p>
+          <div className="mt-5 space-y-1 text-sm text-taupe">
+            <a href="tel:+15204585975" className="block hover:text-gold transition-colors">(520) 458-5975</a>
+            <a href="mailto:vymai6981@yahoo.com" className="block hover:text-gold transition-colors break-all">vymai6981@yahoo.com</a>
+          </div>
         </div>
         <div>
           <h4 className="text-[11px] uppercase tracking-luxe text-foreground mb-4">Visit</h4>
-          <p className="text-sm text-taupe leading-relaxed">1636 E Fry Blvd<br/>Sierra Vista, AZ</p>
+          <p className="text-sm text-taupe leading-relaxed">1636 E Fry Blvd<br/>Sierra Vista, AZ 85635</p>
         </div>
         <div>
           <h4 className="text-[11px] uppercase tracking-luxe text-foreground mb-4">Hours</h4>
-          <p className="text-sm text-taupe leading-relaxed">Mon – Sat · 9:30 – 7:00<br/>Sunday · Closed</p>
+          <p className="text-sm text-taupe leading-relaxed">Mon – Sat · 9:30 AM – 7:00 PM<br/>Sunday · Closed</p>
         </div>
       </div>
       <div className="border-t border-border/60">
