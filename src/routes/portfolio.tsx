@@ -10,9 +10,9 @@ import p6 from "@/assets/portfolio-6.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Maison Onyx" },
-      { name: "description", content: "Selected work from Maison Onyx: chrome finishes, micro-French, almond and coffin shapes — a quiet study in precision." },
-      { property: "og:title", content: "Portfolio — Maison Onyx" },
+      { title: "Portfolio — Tam's Nail Spa" },
+      { name: "description", content: "Selected work from Tam's Nail Spa: chrome finishes, micro-French, almond and coffin shapes — a quiet study in precision." },
+      { property: "og:title", content: "Portfolio — Tam's Nail Spa" },
       { property: "og:description", content: "A quiet study in precision." },
       { property: "og:image", content: p1 },
     ],

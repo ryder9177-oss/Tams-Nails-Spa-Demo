@@ -3,9 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Maison Onyx" },
-      { name: "description", content: "Visit Maison Onyx at 1636 E Fry Blvd, Sierra Vista. Open Monday through Saturday, 9:30 AM to 7:00 PM." },
-      { property: "og:title", content: "Contact — Maison Onyx" },
+      { title: "Contact — Tam's Nail Spa" },
+      { name: "description", content: "Visit Tam's Nail Spa at 1636 E Fry Blvd, Sierra Vista. Open Monday through Saturday, 9:30 AM to 7:00 PM." },
+      { property: "og:title", content: "Contact — Tam's Nail Spa" },
       { property: "og:description", content: "1636 E Fry Blvd, Sierra Vista." },
     ],
   }),
@@ -45,7 +45,7 @@ function ContactPage() {
         <div className="lg:col-span-3">
           <div className="img-zoom border border-border">
             <iframe
-              title="Maison Onyx location"
+              title="Tam's Nail Spa location"
               src="https://www.google.com/maps?q=1636+E+Fry+Blvd,+Sierra+Vista,+AZ&output=embed"
               className="w-full h-[460px] lg:h-[560px] grayscale-[40%] contrast-[0.95]"
               loading="lazy"
