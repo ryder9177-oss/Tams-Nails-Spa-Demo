@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 import { ThemeChooser } from "../components/ThemeChooser";
+import { ScrollToTop } from "../components/ScrollToTop";
 
 function NotFoundComponent() {
   return (
@@ -80,6 +81,7 @@ function RootComponent() {
       </main>
       <SiteFooter />
       <ThemeChooser />
+      <ScrollToTop />
     </div>
   );
 }
@@ -88,8 +90,8 @@ function SiteHeader() {
   const linkBase = "text-[11px] uppercase tracking-luxe text-foreground/80 hover:text-foreground transition-colors duration-300";
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/75 border-b border-border/60">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12 h-20 flex items-center justify-between">
-        <Link to="/" className="font-serif text-2xl tracking-tight text-foreground">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3">
+        <Link to="/" className="font-serif text-lg sm:text-2xl tracking-tight text-foreground whitespace-nowrap">
           Tam's <span className="text-gold">Nail Spa</span>
         </Link>
         <nav className="hidden md:flex items-center gap-10">
@@ -98,12 +100,17 @@ function SiteHeader() {
           <Link to="/portfolio" className={linkBase} activeProps={{ className: "text-foreground" }}>Portfolio</Link>
           <Link to="/contact" className={linkBase} activeProps={{ className: "text-foreground" }}>Contact</Link>
         </nav>
-        <Link
-          to="/booking"
-          className="hidden sm:inline-flex items-center text-[11px] uppercase tracking-luxe px-5 py-2.5 border border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-500"
-        >
-          Book Appointment
-        </Link>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <Link to="/services" className={`${linkBase} md:hidden`}>Services</Link>
+          <Link to="/contact" className={`${linkBase} md:hidden`}>Contact</Link>
+          <Link
+            to="/booking"
+            className="inline-flex items-center text-[10px] sm:text-[11px] uppercase tracking-luxe px-3 sm:px-5 py-2 sm:py-2.5 border border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-500 whitespace-nowrap"
+          >
+            <span className="sm:hidden">Book</span>
+            <span className="hidden sm:inline">Book Appointment</span>
+          </Link>
+        </div>
       </div>
     </header>
   );
