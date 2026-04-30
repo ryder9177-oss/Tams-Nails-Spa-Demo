@@ -63,34 +63,34 @@
 
 :root {
   --radius: 0.25rem;
-  /* Quiet luxury palette */
-  --background: oklch(0.972 0.008 85);        /* Soft Cream #F8F6F2 */
-  --foreground: oklch(0.22 0.005 60);          /* Deep Charcoal #1F1F1F */
-  --card: oklch(1 0 0);                        /* Warm White */
-  --card-foreground: oklch(0.22 0.005 60);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.005 60);
-  --primary: oklch(0.22 0.005 60);             /* Charcoal */
-  --primary-foreground: oklch(0.972 0.008 85);
-  --secondary: oklch(0.94 0.012 75);           /* Light Beige #EFEAE4 */
-  --secondary-foreground: oklch(0.22 0.005 60);
-  --muted: oklch(0.94 0.012 75);
-  --muted-foreground: oklch(0.58 0.012 55);    /* Muted Taupe #8A817C */
-  --accent: oklch(0.74 0.085 80);              /* Soft Gold #C6A96B */
-  --accent-foreground: oklch(1 0 0);
+  /* Black, white & gold marble palette */
+  --background: oklch(0.08 0.005 60);          /* Near black */
+  --foreground: oklch(0.97 0.005 85);          /* Warm white */
+  --card: oklch(0.12 0.005 60 / 0.85);         /* Translucent dark */
+  --card-foreground: oklch(0.97 0.005 85);
+  --popover: oklch(0.1 0.005 60);
+  --popover-foreground: oklch(0.97 0.005 85);
+  --primary: oklch(0.78 0.12 82);              /* Gold */
+  --primary-foreground: oklch(0.08 0.005 60);
+  --secondary: oklch(0.18 0.005 60 / 0.7);
+  --secondary-foreground: oklch(0.97 0.005 85);
+  --muted: oklch(0.18 0.005 60 / 0.6);
+  --muted-foreground: oklch(0.78 0.01 75);
+  --accent: oklch(0.78 0.12 82);               /* Gold */
+  --accent-foreground: oklch(0.08 0.005 60);
   --destructive: oklch(0.55 0.18 27);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.9 0.01 75);
-  --input: oklch(0.9 0.01 75);
-  --ring: oklch(0.74 0.085 80);
+  --border: oklch(0.78 0.12 82 / 0.25);
+  --input: oklch(0.97 0.005 85 / 0.15);
+  --ring: oklch(0.78 0.12 82);
   /* Bespoke tokens */
-  --gold: oklch(0.74 0.085 80);
-  --taupe: oklch(0.58 0.012 55);
-  --cream: oklch(0.972 0.008 85);
-  --beige: oklch(0.94 0.012 75);
-  --charcoal: oklch(0.22 0.005 60);
-  --shadow-soft: 0 20px 60px -30px oklch(0.22 0.005 60 / 0.18);
-  --shadow-lift: 0 30px 80px -40px oklch(0.22 0.005 60 / 0.25);
+  --gold: oklch(0.78 0.12 82);
+  --taupe: oklch(0.78 0.01 75);
+  --cream: oklch(0.97 0.005 85);
+  --beige: oklch(0.18 0.005 60);
+  --charcoal: oklch(0.06 0.005 60);
+  --shadow-soft: 0 20px 60px -30px oklch(0 0 0 / 0.6);
+  --shadow-lift: 0 30px 80px -40px oklch(0 0 0 / 0.75);
   --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
   --font-sans: "Inter", "Neue Haas Grotesk", system-ui, -apple-system, sans-serif;
   --chart-1: oklch(0.646 0.222 41.116);
@@ -150,6 +150,10 @@
 
   body {
     background-color: var(--color-background);
+    background-image: url("/src/assets/marble-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
@@ -168,8 +172,8 @@
   .font-serif { font-family: var(--font-serif); }
   .font-sans { font-family: var(--font-sans); }
   .text-gold { color: var(--gold); }
-  .bg-cream { background-color: var(--cream); }
-  .bg-beige { background-color: var(--beige); }
+  .bg-cream { background-color: oklch(0.1 0.005 60 / 0.7); backdrop-filter: blur(8px); }
+  .bg-beige { background-color: oklch(0.14 0.005 60 / 0.65); backdrop-filter: blur(8px); }
   .text-taupe { color: var(--taupe); }
 
   .tracking-luxe { letter-spacing: 0.28em; }
