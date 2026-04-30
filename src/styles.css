@@ -161,6 +161,10 @@
     letter-spacing: 0.005em;
   }
 
+  body.theme-light {
+    background-image: url("/src/assets/marble-bg-light.jpg");
+  }
+
   h1, h2, h3, h4 {
     font-family: var(--font-serif);
     font-weight: 400;
@@ -220,3 +224,34 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Light marble theme overrides */
+body.theme-light {
+  --background: oklch(0.98 0.005 85);
+  --foreground: oklch(0.18 0.005 60);
+  --card: oklch(1 0 0 / 0.85);
+  --card-foreground: oklch(0.18 0.005 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.005 60);
+  --primary: oklch(0.7 0.13 75);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.008 85 / 0.7);
+  --secondary-foreground: oklch(0.18 0.005 60);
+  --muted: oklch(0.96 0.008 85 / 0.6);
+  --muted-foreground: oklch(0.45 0.01 70);
+  --accent: oklch(0.7 0.13 75);
+  --accent-foreground: oklch(1 0 0);
+  --border: oklch(0.7 0.13 75 / 0.3);
+  --input: oklch(0.18 0.005 60 / 0.15);
+  --ring: oklch(0.7 0.13 75);
+  --gold: oklch(0.65 0.14 72);
+  --taupe: oklch(0.45 0.01 70);
+  --cream: oklch(0.98 0.005 85);
+  --beige: oklch(0.94 0.012 75);
+  --charcoal: oklch(0.18 0.005 60);
+  --shadow-soft: 0 20px 60px -30px oklch(0.2 0.005 60 / 0.18);
+  --shadow-lift: 0 30px 80px -40px oklch(0.2 0.005 60 / 0.25);
+}
+
+body.theme-light .bg-cream { background-color: oklch(1 0 0 / 0.75); }
+body.theme-light .bg-beige { background-color: oklch(0.96 0.01 80 / 0.7); }
