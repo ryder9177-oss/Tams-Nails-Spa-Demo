@@ -15,6 +15,8 @@ export const Route = createFileRoute("/booking")({
 
 const categories = [
   "Nail Services",
+  "Acrylic Nails",
+  "Dipping Powder",
   "Waxing",
 ];
 
