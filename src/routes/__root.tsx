@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { ThemeChooser } from "../components/ThemeChooser";
 
 function NotFoundComponent() {
   return (
@@ -78,6 +79,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <SiteFooter />
+      <ThemeChooser />
     </div>
   );
 }
