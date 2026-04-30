@@ -21,7 +21,6 @@ export function ThemeChooser() {
       applyTheme(saved);
     } else {
       applyTheme("dark");
-      setOpen(true);
     }
   }, []);
 
